@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <header class="page-heading">
+      <p class="eyebrow">A handy little tool</p>
+      <h1>Simple Calculator</h1>
+      <p>Enter two numbers, then choose an operation.</p>
+    </header>
+
+    <form id="calculator-form">
+      <label for="number1">Number 1</label>
+      <input id="number1" type="number" step="any" placeholder="Enter the first number">
+
+      <label for="number2">Number 2</label>
+      <input id="number2" type="number" step="any" placeholder="Enter the second number">
+
+      <fieldset class="operations">
+        <legend>Choose an operation</legend>
+        <button type="button" data-operation="add">Add (+)</button>
+        <button type="button" data-operation="subtract">Subtract (−)</button>
+        <button type="button" data-operation="multiply">Multiply (×)</button>
+        <button type="button" data-operation="divide">Divide (÷)</button>
+      </fieldset>
+
+      <p class="result-box">
+        Result: <output id="result" aria-live="polite">Your answer will appear here.</output>
+      </p>
+    </form>
+  </main>
+</body>
+</html>

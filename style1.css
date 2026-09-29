@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  color: #243047;
+  background:
+    radial-gradient(circle at top left, #d9f2ff, transparent 40%),
+    linear-gradient(135deg, #edf2ff, #f8f5ff);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator {
+  width: min(100%, 480px);
+  padding: 36px;
+  border: 1px solid #d7dfed;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 20px 55px rgba(41, 55, 89, 0.14);
+}
+
+.page-heading {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #6554c0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 10px;
+  color: #26334d;
+  font-size: 2rem;
+}
+
+.page-heading > p:last-child {
+  margin: 0;
+  color: #68758c;
+}
+
+form > label {
+  display: block;
+  margin: 18px 0 7px;
+  color: #35425a;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e4;
+  border-radius: 9px;
+  color: #243047;
+  background: #fbfcff;
+  font: inherit;
+}
+
+input:focus {
+  border-color: #7565d5;
+  outline: 3px solid rgba(117, 101, 213, 0.16);
+}
+
+.operations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 24px 0;
+  padding: 16px;
+  border: 1px solid #d7dfed;
+  border-radius: 12px;
+}
+
+.operations legend {
+  padding: 0 7px;
+  color: #35425a;
+  font-weight: bold;
+}
+
+button {
+  min-height: 46px;
+  padding: 10px;
+  border: 1px solid #6958c8;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #6958c8;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #5141aa;
+  background: #5141aa;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(105, 88, 200, 0.35);
+  outline-offset: 3px;
+}
+
+.result-box {
+  min-height: 58px;
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #c9e9df;
+  border-radius: 9px;
+  color: #245b4b;
+  background: #effaf6;
+  font-weight: bold;
+}
+
+#result {
+  font-weight: normal;
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    padding: 26px 20px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
